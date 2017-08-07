@@ -11,7 +11,7 @@
   $(function(){
   function domarkdown(){
     var req = ocpu.call("rmdhtml", {text : "index"}, function(session){
-      $("content").attr('src', session.getFileURL("output.html"));     
+      $("iframe").attr('src', session.getFileURL("output.html"));     
     }).fail(function(text){
       alert("Error: " + req.responseText);
     });
@@ -24,7 +24,7 @@
 
 <style type="text/css" media="screen">
 
-content { 
+iframe { 
   position: absolute;
   top: 0px;
   right: 0px;
