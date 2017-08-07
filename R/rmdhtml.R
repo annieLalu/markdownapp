@@ -3,7 +3,7 @@
 
 #' @export
 rmdhtml<- function(text){
-if(text="index"){
+if(text == "index"){
   knit2html("../inst/www/index.Rmd", output="../inst/www/output.html");
  }
  invisible();
