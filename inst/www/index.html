@@ -12,7 +12,7 @@
   function domarkdown(){
     var req = ocpu.call("rmdhtml", {}, function(session){ //changed
       $("content").attr('src', session.getFileURL("output.html"));     
-    }).fail(function(text){
+    }).fail(function(){
       alert("Error: " + req.responseText);
     });
   }
