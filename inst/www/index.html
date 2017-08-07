@@ -10,7 +10,7 @@
   //This app requires OpenCPU 1.0.1 or higher!
   $(function(){
   function domarkdown(){
-    var req = ocpu.call("rmdhtml", function(session){
+    var req = ocpu.call("rmdhtml", {}, function(session){ //changed
       $("content").attr('src', session.getFileURL("output.html"));     
     }).fail(function(text){
       alert("Error: " + req.responseText);
