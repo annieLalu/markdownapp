@@ -2,9 +2,9 @@ Package: markdownapp
 Type: Package
 Title: Markdown Application for OpenCPU
 Version: 1.1
-Date: 2017-05-20
-Author: Jeroen Ooms
-Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Date: 2017-08-07
+Author: Annalisa Filippi
+Maintainer: Annalisa FIlippi <>
 Description: OpenCPU App for markdown package
 License: Apache2
 Depends:
