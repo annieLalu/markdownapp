@@ -4,7 +4,7 @@
 #' @export
 rmdhtml<- function(text){
 if(text == "index"){
-  knit2html("../index.Rmd", output="output.html");
+  knit2html("/usr/local/lib/R/site-library/markdownapp/inst/www/index.Rmd", output="output.html");
  }
  invisible();
 }
