@@ -6,11 +6,11 @@
 <script src="jquery-1.10.2.min.js"></script>
 <script src="opencpu-0.4.js"></script>
 
-<script>
+<!--<script>
   //This app requires OpenCPU 1.0.1 or higher!
   $(function(){
   function domarkdown(){
-    var req = ocpu.call("rmdhtml", {text : "index"}, function(session){
+    var req = ocpu.call("rmdhtml", {}, function(session){
       $("iframe").attr('src', session.getFileURL("output.html"));     
     }).fail(function(text){
       alert("Error: " + req.responseText);
@@ -20,19 +20,15 @@
   //init on start
   domarkdown();
   });
-</script>
+</script> -->
 
 <style type="text/css" media="screen">
 
 iframe { 
-  position: absolute;
   top: 0px;
-  right: 0px;
-  width: 604px;
   height: 100%;
   border: 0;
   margin: 0;
-  z-index: 999999;
 }
 
 </style>

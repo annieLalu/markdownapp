@@ -2,10 +2,8 @@
 ##
 ##library(knitr)
 #' @export
-rmdhtml<- function(text){
-if(text == "index"){
-  knit2html("/usr/local/lib/R/site-library/markdownapp/www/index.Rmd", output="output.html");
- }
+rmdhtml<- function(){
+    knit2html("/usr/local/lib/R/site-library/markdownapp/www/index.Rmd", output="output.html");
  invisible();
 }
 
