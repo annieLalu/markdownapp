@@ -11,8 +11,8 @@
   $(function(){
   function domarkdown(){
     var req = ocpu.call("rmdhtml", {}, function(session){
-      //$("iframe").attr('src', session.getFileURL("output.html"));   
-        $("#content").load("output.html");
+      $("iframe").attr('src', session.getFileURL("output.html"));   
+      $("#content").load("output.html");
     }).fail(function(text){
       alert("Error: " + req.responseText);
     });
@@ -32,6 +32,9 @@ iframe {
   border: 0;
   margin: 0;
 }
+    #content {
+        border: solid 2px;
+    }
 
 </style>
 </head>
