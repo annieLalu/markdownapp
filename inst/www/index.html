@@ -12,7 +12,7 @@
   function domarkdown(){
     var req = ocpu.call("rmdhtml", {}, function(session){
       //$("iframe").attr('src', session.getFileURL("output.html"));   
-        $("#content").append("output.html");
+        $("#content").load("output.html");
     }).fail(function(text){
       alert("Error: " + req.responseText);
     });
@@ -36,6 +36,7 @@ iframe {
 </style>
 </head>
 <body>
+    <p>the page is here:</p>
 <div id="content"></div>
 
   <iframe src="about:blank"></iframe>
