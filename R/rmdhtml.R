@@ -3,7 +3,7 @@
 ##library(knitr)
 #' @export
 rmdhtml<- function(){
-    url <- system.file("index.Rmd")
+    url <- system.file("/www/index.Rmd")
     knit2html(url, output="output.html");
  invisible();
 }
