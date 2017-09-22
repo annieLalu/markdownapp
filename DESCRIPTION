@@ -5,7 +5,7 @@ Version: 1.1
 Date: 2017-08-07
 Author: Annalisa Filippi
 Maintainer: Annalisa Filippi <annalisa.filippi1994@gmail.com>
-Description: OpenCPU App for markdown package
+Description: OpenCPU App for render markdown file directly
 License: Apache2
 Depends:
     knitr
